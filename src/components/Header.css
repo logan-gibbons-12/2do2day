@@ -1,0 +1,45 @@
+.Header {
+    background-color: #1C3144;
+    height: 120px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sidebar__Button {
+    text-align: left;
+}
+
+.add__Button {
+    text-align: right;
+}
+
+.Button {
+    background-color: #A882DD;
+    border-radius: 20px;
+    size: 50px;
+    color: white;
+    width: 75px;
+    height: 75px;
+    margin-right: 30px;
+    margin-left: 30px;
+    outline-style: none;
+    border: none;
+    margin-top: 22.5px;
+}
+
+.Button:hover,
+.Button:focus {
+    background-color: #6F35C0;
+}
+
+.Button:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
