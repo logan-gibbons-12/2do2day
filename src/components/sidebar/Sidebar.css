@@ -1,0 +1,218 @@
+.Sidebar {
+    position: fixed;
+    align-items: left;
+    background-color: #1C3144;
+    height: 100%;
+    width: 350px;
+    z-index: 4;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+}
+
+.Sidebar--open {
+    transform: translateX(0%);
+}
+
+.items {
+    color: white;
+    list-style: none;
+}
+
+.close {
+    margin-top: 20px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.close:active {
+    transform: scale(0.99);
+}
+
+.home {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: center;
+    align-items: center;
+}
+
+.home:hover {
+    background-color: #A882DD;
+}
+
+.home:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
+
+.profile {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: center;
+    align-items: center;
+}
+
+.profile:hover {
+    background-color: #A882DD;
+}
+
+.profile:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
+
+.about {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.about:hover {
+    background-color: #A882DD;
+}
+
+.about:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
+
+.groups {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: center;
+    align-items: center;
+}
+
+.groups:hover {
+    background-color: #A882DD;
+}
+
+.groups:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
+
+.messages {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: center;
+    align-items: center;
+}
+
+.messages:hover {
+    background-color: #A882DD;
+}
+
+.messages:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
+
+.settings {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: center;
+    align-items: center;
+}
+
+.settings:hover {
+    background-color: #A882DD;
+}
+
+.settings:active {
+    transform: scale(0.95);
+    background-color: #6F35C0;
+}
+
+.copyright {
+    color: white;
+    margin-top: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    height: 40px;
+    width: fit-content;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    text-align: bottom;
+    align-items: center;
+}

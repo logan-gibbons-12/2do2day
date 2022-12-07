@@ -1,16 +1,23 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/sidebar/Sidebar';
+import Backdrop from './components/sidebar/Backdrop';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Sidebar />
-    </div>
-  );
-}
+const App = () => {
+	const [sidebar, setSidebar] = useState(false);
+
+	const toggleSidebar = () => {
+		setSidebar((prevSate) => !prevSate);
+	};
+
+	return (
+		<div className="App">
+			<Header openSidebar={toggleSidebar} />
+			<Sidebar sidebar={sidebar} closeSidebar={toggleSidebar} />
+			<Backdrop sidebar={sidebar} />
+		</div>
+	);
+};
 
 export default App;
-

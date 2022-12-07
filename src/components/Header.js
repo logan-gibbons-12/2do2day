@@ -4,13 +4,13 @@ import DehazeRoundedIcon from '@mui/icons-material/DehazeRounded';
 import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 
 
-const Header = () => {
+const Header = ({openSidebar}) => {
   return (
     <div className='Header'>
 
-        <div className='sidebar__Button'>
+        <div className='sidebar__Button' onClick = {openSidebar}>
             <button className='Button'>
-                <DehazeRoundedIcon />
+                    <DehazeRoundedIcon sx={{ fontSize: 40 }} />
             </button>
         </div>
 
@@ -20,7 +20,7 @@ const Header = () => {
 
         <div className='add__Button'>
             <button className='Button'>
-                <AddBoxRoundedIcon />
+                <AddBoxRoundedIcon sx={{ fontSize: 40 }} />
             </button>
         </div>
         

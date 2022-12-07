@@ -1,10 +1,11 @@
 .Header {
     background-color: #1C3144;
     height: 120px;
-    position: relative;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .Logo {
