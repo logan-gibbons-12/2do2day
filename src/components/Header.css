@@ -38,6 +38,7 @@
 .Button:hover,
 .Button:focus {
     background-color: #6F35C0;
+    cursor: pointer;
 }
 
 .Button:active {

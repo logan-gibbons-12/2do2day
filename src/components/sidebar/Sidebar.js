@@ -11,15 +11,16 @@ import './Sidebar.css';
 const Sidebar = ({sidebar, closeSidebar}) => {
 	return (
 		<div className={sidebar? 'Sidebar Sidebar--open' : 'Sidebar'}>
-			<div className="close" onClick={closeSidebar}>
-				<CloseRoundedIcon sx={{ fontSize: 50, color: 'maroon' }} />
-			</div>
+			
+            <div className='close' onClick={closeSidebar}>
+                <CloseRoundedIcon sx={{ fontSize: 60, color: 'maroon' }} />
+            </div>
 
 			<div className="items">
 				<li
 					className="home"
 					onClick={() => {
-						window.location.pathname = '/Home';
+						window.location.pathname = '/';
 					}}
 				>
 					{' '}
