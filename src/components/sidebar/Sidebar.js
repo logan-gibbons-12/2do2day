@@ -17,65 +17,52 @@ const Sidebar = ({sidebar, closeSidebar}) => {
             </div>
 
 			<div className="items">
+				<a href='/'>
 				<li
 					className="home"
-					onClick={() => {
-						window.location.pathname = '/';
-					}}
 				>
 					{' '}
 					<HomeRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Home{' '}
 				</li>
-
+				</a>
+				<a href='/Profile'>
 				<li
 					className="profile"
-					onClick={() => {
-						window.location.pathname = '/Profile';
-					}}
 				>
 					{' '}
 					<PersonIcon sx={{ fontSize: 40, mr: '5px' }} /> Profile{' '}
 				</li>
-
+				</a>
+				<a href='/About'>
 				<li
 					className="about"
-					onClick={() => {
-						window.location.pathname = '/About';
-					}}
 				>
 					{' '}
 					<InfoRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> About{' '}
 				</li>
-
-				<li
-					className="groups"
-					onClick={() => {
-						window.location.pathname = '/Groups';
-					}}
-				>
+				</a>
+				<a href='/Groups'>
+				<li className="groups">
 					{' '}
 					<GroupsRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Groups{' '}
 				</li>
-
+				</a>
+				<a href='/Messages'>
 				<li
 					className="messages"
-					onClick={() => {
-						window.location.pathname = '/Messages';
-					}}
 				>
 					{' '}
 					<ForumRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Messages{' '}
 				</li>
-
+				</a>
+				<a href='/Settings'>
 				<li
 					className="settings"
-					onClick={() => {
-						window.location.pathname = '/Settings';
-					}}
 				>
 					{' '}
 					<SettingsRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Settings{' '}
 				</li>
+				</a>
 			</div>
 
 			<div className="copyright">
