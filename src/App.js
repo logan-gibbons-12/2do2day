@@ -20,6 +20,9 @@ const App = () => {
   let Location
 
 	switch (window.location.pathname) {
+		default:
+			Location = Home
+			break;
 		case '/':
 			Location = Home
 			break;
@@ -45,7 +48,7 @@ const App = () => {
 			<Header openSidebar={toggleSidebar} />
 			<Sidebar sidebar={sidebar} closeSidebar={toggleSidebar} />
 			<Backdrop sidebar={sidebar} closeSidebar={toggleSidebar} />
-      		<Location />
+			<Location />
 		</div>
 	);
 };
