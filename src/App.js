@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import Backdrop from './components/sidebar/Backdrop';
+import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Groups from './pages/Groups';
@@ -19,26 +20,23 @@ const App = () => {
   let Location
 
 	switch (window.location.pathname) {
-    default:
-      Location = App
-      break;
 		case '/':
-      Location = App
+			Location = Home
 			break;
 		case '/Profile':
-      Location = Profile
+    		Location = Profile
 			break;
 		case '/About':
-      Location = About
+      		Location = About
 			break;
 		case '/Groups':
-      Location = Groups
+      		Location = Groups
 			break;
 		case '/Messages':
-      Location = Messages
+      		Location = Messages
 			break;
 		case '/Settings':
-      Location = Settings
+      		Location = Settings
 			break;
 	}
 
@@ -47,7 +45,7 @@ const App = () => {
 			<Header openSidebar={toggleSidebar} />
 			<Sidebar sidebar={sidebar} closeSidebar={toggleSidebar} />
 			<Backdrop sidebar={sidebar} closeSidebar={toggleSidebar} />
-      <Location />
+      		<Location />
 		</div>
 	);
 };

@@ -8,60 +8,51 @@ import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import './Sidebar.css';
 
-const Sidebar = ({sidebar, closeSidebar}) => {
+const Sidebar = ({ sidebar, closeSidebar }) => {
 	return (
-		<div className={sidebar? 'Sidebar Sidebar--open' : 'Sidebar'}>
-			
-            <div className='close' onClick={closeSidebar}>
-                <CloseRoundedIcon sx={{ fontSize: 60, color: 'maroon' }} />
-            </div>
+		<div className={sidebar ? 'Sidebar Sidebar--open' : 'Sidebar'}>
+			<div className="close" onClick={closeSidebar}>
+				<CloseRoundedIcon sx={{ fontSize: 60, color: 'maroon' }} />
+			</div>
 
 			<div className="items">
-				<a href='/'>
-				<li
-					className="home"
-				>
-					{' '}
-					<HomeRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Home{' '}
-				</li>
+				<a href="/">
+					<li className="home">
+						{' '}
+						<HomeRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Home{' '}
+					</li>
 				</a>
-				<a href='/Profile'>
-				<li
-					className="profile"
-				>
-					{' '}
-					<PersonIcon sx={{ fontSize: 40, mr: '5px' }} /> Profile{' '}
-				</li>
+				<a href="/Profile">
+					<li className="profile">
+						{' '}
+						<PersonIcon sx={{ fontSize: 40, mr: '5px' }} /> Profile{' '}
+					</li>
 				</a>
-				<a href='/About'>
-				<li
-					className="about"
-				>
-					{' '}
-					<InfoRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> About{' '}
-				</li>
+				<a href="/Groups">
+					<li className="groups">
+						{' '}
+						<GroupsRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Groups{' '}
+					</li>
 				</a>
-				<a href='/Groups'>
-				<li className="groups">
-					{' '}
-					<GroupsRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Groups{' '}
-				</li>
+				<a href="/Messages">
+					<li className="messages">
+						{' '}
+						<ForumRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Messages{' '}
+					</li>
 				</a>
-				<a href='/Messages'>
-				<li
-					className="messages"
-				>
-					{' '}
-					<ForumRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Messages{' '}
-				</li>
+				<a href="/Settings">
+					<li className="settings">
+						{' '}
+						<SettingsRoundedIcon
+							sx={{ fontSize: 40, mr: '5px' }}
+						/> Settings{' '}
+					</li>
 				</a>
-				<a href='/Settings'>
-				<li
-					className="settings"
-				>
-					{' '}
-					<SettingsRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Settings{' '}
-				</li>
+				<a href="/About">
+					<li className="about">
+						{' '}
+						<InfoRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> About{' '}
+					</li>
 				</a>
 			</div>
 
