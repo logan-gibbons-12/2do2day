@@ -18,7 +18,6 @@ const App = () => {
 	};
 
   let Location
-
 	switch (window.location.pathname) {
 		default:
 			Location = Home
