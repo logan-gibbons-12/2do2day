@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Groups from './pages/Groups';
-import Messages from './pages/Messages';
+import Messages from './pages/messages/Messages';
 import Settings from './pages/Settings';
 
 const App = () => {
