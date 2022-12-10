@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/sidebar/Sidebar';
@@ -8,7 +9,7 @@ import About from './pages/About';
 import Profile from './pages/Profile';
 import Groups from './pages/Groups';
 import Messages from './pages/messages/Messages';
-import Settings from './pages/Settings';
+import Settings from './pages/Settings'; 
 
 const App = () => {
 	const [sidebar, setSidebar] = useState(false);
@@ -17,37 +18,19 @@ const App = () => {
 		setSidebar((prevSate) => !prevSate);
 	};
 
-  let Location
-	switch (window.location.pathname) {
-		default:
-			Location = Home
-			break;
-		case '/':
-			Location = Home
-			break;
-		case '/Profile':
-    		Location = Profile
-			break;
-		case '/About':
-      		Location = About
-			break;
-		case '/Groups':
-      		Location = Groups
-			break;
-		case '/Messages':
-      		Location = Messages
-			break;
-		case '/Settings':
-      		Location = Settings
-			break;
-	}
-
 	return (
 		<div className="App">
 			<Header openSidebar={toggleSidebar} />
 			<Sidebar sidebar={sidebar} closeSidebar={toggleSidebar} />
 			<Backdrop sidebar={sidebar} closeSidebar={toggleSidebar} />
-			<Location />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/profile" element={<Profile />} />
+				<Route path="/groups" element={<Groups />} />
+				<Route path="/messages" element={<Messages />} />
+				<Route path="/settings" element={<Settings />} />
+			</Routes>
 		</div>
 	);
 };

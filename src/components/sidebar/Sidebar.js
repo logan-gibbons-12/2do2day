@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonIcon from '@mui/icons-material/Person';
@@ -16,44 +17,44 @@ const Sidebar = ({ sidebar, closeSidebar }) => {
 			</div>
 
 			<div className="items">
-				<a href="/">
+				<Link to="/">
 					<li className="home">
 						{' '}
 						<HomeRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Home{' '}
 					</li>
-				</a>
-				<a href="/Profile">
+				</Link>
+				<Link to="/Profile">
 					<li className="profile">
 						{' '}
 						<PersonIcon sx={{ fontSize: 40, mr: '5px' }} /> Profile{' '}
 					</li>
-				</a>
-				<a href="/Groups">
+				</Link>
+				<Link to="/Groups">
 					<li className="groups">
 						{' '}
 						<GroupsRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Groups{' '}
 					</li>
-				</a>
-				<a href="/Messages">
+				</Link>
+				<Link to="/Messages">
 					<li className="messages">
 						{' '}
 						<ForumRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> Messages{' '}
 					</li>
-				</a>
-				<a href="/Settings">
+				</Link>
+				<Link to="/Settings">
 					<li className="settings">
 						{' '}
 						<SettingsRoundedIcon
 							sx={{ fontSize: 40, mr: '5px' }}
 						/> Settings{' '}
 					</li>
-				</a>
-				<a href="/About">
+				</Link>
+				<Link to="/About">
 					<li className="about">
 						{' '}
 						<InfoRoundedIcon sx={{ fontSize: 40, mr: '5px' }} /> About{' '}
 					</li>
-				</a>
+				</Link>
 			</div>
 
 			<div className="copyright">
