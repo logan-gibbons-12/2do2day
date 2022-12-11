@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import Groups from './pages/Groups';
 import Messages from './pages/messages/Messages';
 import Settings from './pages/Settings';
+import Register from './pages/register/Register';
 
 const App = () => {
 	const [sidebar, setSidebar] = useState(false);
@@ -45,8 +46,8 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<Header openSidebar={toggleSidebar} />
 			<Sidebar sidebar={sidebar} closeSidebar={toggleSidebar} />
+			<Header openSidebar={toggleSidebar} />
 			<Backdrop sidebar={sidebar} closeSidebar={toggleSidebar} />
 			<Location />
 		</div>
